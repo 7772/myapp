@@ -13,7 +13,7 @@ class ArticlesController extends Controller
      */
     public function index()
     {
-        //
+        return __METHOD__ . 'index()';
     }
 
     /**
@@ -23,7 +23,7 @@ class ArticlesController extends Controller
      */
     public function create()
     {
-        //
+        return __METHOD__ . 'create()';
     }
 
     /**
@@ -34,7 +34,7 @@ class ArticlesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return __METHOD__ . 'store()';
     }
 
     /**
@@ -45,7 +45,7 @@ class ArticlesController extends Controller
      */
     public function show($id)
     {
-        //
+        return __METHOD__ . 'show()';
     }
 
     /**
@@ -56,7 +56,7 @@ class ArticlesController extends Controller
      */
     public function edit($id)
     {
-        //
+        return __METHOD__ . 'edit()';
     }
 
     /**
@@ -68,7 +68,7 @@ class ArticlesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        return __METHOD__ . 'update()';
     }
 
     /**
@@ -79,6 +79,6 @@ class ArticlesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        return __METHOD__ . 'destroy()';
     }
 }
