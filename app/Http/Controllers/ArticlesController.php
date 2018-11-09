@@ -13,7 +13,9 @@ class ArticlesController extends Controller
      */
     public function index()
     {
-        return __METHOD__ . 'index()';
+        $articles = \App\Article::latest()->paginate(3);
+
+        return view('articles.index', compact('articles'));
     }
 
     /**

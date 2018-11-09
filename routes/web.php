@@ -41,8 +41,15 @@ Route::get('auth/logout', function () {
 
     return '또 봐요~';
 });
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm');
+
+Route::resource('articles', 'ArticlesController');
+
+DB::listen(function ($query) {
+    var_dump($query->sql);
+});
